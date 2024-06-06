@@ -5,7 +5,7 @@ function init() {
 function buscarProduto() {
     const id = document.getElementById('id-read').value;
 
-    fetch(`http://localhost:8080/produto/${id}`, {
+    fetch(`https://deploy-spring-thymeleaf.onrender.com/produto/${id}`, {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json'
@@ -37,7 +37,7 @@ function buscarProduto() {
 
 function deletarProduto() {
     const id = document.getElementById('id-delete').value;
-    fetch(`http://localhost:8080/produto/${id}`, {
+    fetch(`https://deploy-spring-thymeleaf.onrender.com/produto/${id}`, {
         method: 'DELETE',
         headers: {
             'Content-Type': 'application/json'
@@ -77,7 +77,7 @@ function editarProduto() {
         preco: preco
     };
 
-    fetch(`http://localhost:8080/produto/${id}`, {
+    fetch(`https://deploy-spring-thymeleaf.onrender.com/produto/${id}`, {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json'
@@ -118,7 +118,7 @@ function criarProduto() {
         preco: preco
     };
 
-    fetch('http://localhost:8080/produto/create-produto', {
+    fetch('https://deploy-spring-thymeleaf.onrender.com/produto/create-produto', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -149,7 +149,7 @@ function criarProduto() {
 }
 
 function listarProdutos() {
-    fetch('http://localhost:8080/produto/all', {
+    fetch('https://deploy-spring-thymeleaf.onrender.com/produto/all', {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json'
